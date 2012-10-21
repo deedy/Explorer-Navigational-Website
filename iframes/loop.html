@@ -1,0 +1,928 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>How to use PHP in HTML pages</title>
+<meta name="description" content="NTC Hosting offers high quality PHP and HTML hosting services with maximum performance for HTML and PHP-based applications - choose between PHP4, PHP5 and PHP6." />
+<meta name="keywords" content="php html, php, html, page, hosting, maximum, performance, application, php4, php5, php6" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="/styles.min.css" />
+<script type="text/javascript" src="/includes/jses.min.js"></script>
+<script type="text/javascript" src="/includes/flowplayer-3.2.6.min.js"></script>
+</head>
+<body>
+<div id="all">
+  <div id="header">
+<div style="float:left; width:982px; height:28px; text-align:right;">
+    <div class="top_links">
+      <table border="0" cellspacing="0" cellpadding="0" align="center">
+        <tr>
+          <td width="23"><span class="sprite-top-livechat-small" title="Livechat"></span></td>
+          <td width="75"><div id="ci4tR1" style="z-index:100;position:absolute"></div><div id="sc4tR1" style="display:inline"></div><div id="sd4tR1" style="display:none"></div><script type="text/javascript">var se4tR1=document.createElement("script");se4tR1.type="text/javascript";var se4tR1s=(location.protocol.indexOf("https")==0?"https":"http")+"://image.providesupport.com/js/propersupport/safe-textlink.js?ps_h=4tR1&ps_t="+new Date().getTime()+"&online-link-html=Live%20Chat&offline-link-html=Live%20Chat";setTimeout("se4tR1.src=se4tR1s;document.getElementById('sd4tR1').appendChild(se4tR1)",1)</script></td>
+          <!--<td width="75"><a href="http://www.ntchosting.com" onclick="window.open('http://messenger.providesupport.com/messenger/propersupport.html','LiveChat','width=500,height=500'); return false;" title="Click here to talk with our Live Chat operator!">Live Chat</a></td>-->
+          <td width="23"><span class="sprite-top-login-small" title="Login"></span></td>
+          <td width="60"><a href="#" rel="#loginOverlay" name="/includes/login.php" id="control_panel_login">Login</a></td>
+          <td width="23"><img src="/web_hosting_images/top-video-small.gif" align="left" alt="Video Tutorials" /></td>
+          <td><a href="http://www.ntchosting.com/videos/" id="webmail_login">Videos</a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <div id="logo"><a href="http://www.ntchosting.com/"><img src="/web_hosting_images/logo.jpg" alt="NTC Hosting - kickstart your web presence!" width="227" height="55" /></a></div>
+
+  <div id="newnav">
+  	<ul class="megamenu">
+    	<li>
+        	<a class="MegaMenuLinkOff" href="http://blog.ntchosting.com"><span>Blog</span></a>
+        </li>
+    	<li>
+        	<a class="MegaMenuLink mm-current" href="/encyclopedia.html"><span>Encyclopedia</span></a>
+            
+            <div class="mm_encyclopedia">
+                <table width="300" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="100" valign="top">
+                                <a href="/hosting-terminology.html" ><span>Hosting</span></a><br />
+                                <a href="/domain-terminology.html" ><span>Domains</span></a><br />
+                                <a href="/database-terminology.html" ><span>Databases</span></a><br />
+                                <a href="/email-terminology.html" ><span>Email</span></a>
+
+                        </td>
+                        <td width="100" valign="top">
+                                <a href="/dns-terminology.html" ><span>DNS</span></a><br />
+                                <a href="/scripting-terminology.html" class="mm-sub-current"><span>Scripting</span></a><br />
+                                <a href="/frameworks.html" ><span>Frameworks</span></a><br />
+                                <a href="/ftp-terminology.html" ><span>FTP</span></a>
+                        </td>
+                        <td width="100" valign="top">
+                                <a href="/multimedia-terminology.html" ><span>Multimedia</span></a><br />
+                                <a href="/internet-terminology.html" ><span>Internet</span></a><br />
+                                <a href="/webdesign-terminology.html" ><span>Web Design</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    	<li>
+        	<a class="MegaMenuLink " href="/domains/"><span>Domain Names</span></a>
+            
+            <div class="mm_domains">
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="200" valign="top">
+                            <a href="/domains/what-is-domain.html" ><span>What is a Domain?</span></a><br />
+                            <a href="/domains/domain-registration-transfer.html" ><span>Domain Registration</span></a><br />
+                            <a href="/domains/free-domain-registration-with-hosting.html" ><span>Free Domain with Hosting</span></a><br />
+                            <a href="/domains/low-cost-domains-free-domain-manager.html" ><span>Free Domain Manager Plan</span></a><br />
+                            <a href="/domains/whois-id-protection.html" ><span>Whois Privacy Protection</span></a>
+                        </td>
+                        <td width="150" valign="top">
+                            <a href="/domains/com.html" ><span>COM Domains</span></a><br />
+                            <a href="/domains/net.html" ><span>NET Domains</span></a><br />
+							<a href="/domains/org.html" ><span>ORG Domains</span></a><br />
+                            <a href="/domains/info.html" ><span>INFO Domains</span></a><br />
+                            <a href="/domains/biz.html" ><span>BIZ Domains</span></a>
+                        </td>
+                        <td width="150" valign="top">
+                            <a href="/domains/us.html" ><span>US Domains</span></a><br />
+                            <a href="/domains/co.uk.html" ><span>UK Domains</span></a><br />
+                            <a href="/domains/ca.html" ><span>Canadian Domains</span></a><br />
+                            <a href="/domains/com.au.html" ><span>Australian Domains</span></a><br />
+                            <a href="/domains/eu.html" ><span>European Domains</span></a>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    	<li>
+        	<a class="MegaMenuLink " href="/dedicated-servers.html"><span>Dedicated Servers</span></a>
+            
+            <div class="mm_dedicated">
+                <table width="500" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="260" valign="top">
+                            <a href="/gold-dedicated-server.html" ><span>Gold Dedicated Server</span></a><br />
+                            <a href="/platinum-dedicated-server.html" ><span>Platinum Dedicated Server</span></a><br />
+                            <a href="/diamond-dedicated-server.html" ><span>Diamond Dedicated Server</span></a><br />
+                            <a href="/dedicated-server-hosting.html" ><span>How Dedicated Hosting works?</span></a>
+                        </td>
+                        <td width="240" valign="top">
+                            <a href="/low-cost-semi-dedicated-hosting.html" ><span>Semi-dedicated Hosting</span></a><br />
+                            <a href="/pioneer-semi-dedicated-server.html" ><span>Pioneer Semi-dedicated Server</span></a><br />
+                            <a href="/master-semi-dedicated-server.html" ><span>Master Semi-dedicated Server</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    	<li>
+        	<a class="MegaMenuLink " href="/virtual-private-servers.html"><span>VPS Hosting</span></a>
+            
+            <div class="mm_vps">
+                <table width="220" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td width="220" valign="top">
+                            <a href="/virtual-private-servers-with-openvz.html" ><span>OpenVZ VPS packages</span></a><br />
+                            <a href="/virtual-private-servers-with-virtuozzo.html" ><span>VirtuozzoVPS packages</span></a><br />
+                            <a href="/deal-virtual-private-server.html" ><span>Deal Virtual Private Server</span></a><br />
+                            <a href="/value-virtual-private-server.html" ><span>Value Virtual Private Server</span></a><br />
+                            <a href="/expert-virtual-private-server.html" ><span>Expert Virtual Private Server</span></a><br />
+							<a href="/virtual-private-server-hosting.html" ><span>How VPS Hosting works?</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    	<li>
+        	<a class="MegaMenuLink " href="/web-hosting/"><span>Web Hosting</span></a>
+            
+            <div class="mm_webhosting">
+                <table width="580" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <th width="170" align="left"><a href="/low-cost-affordable-shared-web-hosting.html" ><span>Shared Hosting</span></a></th>
+                        <th width="170" align="left"><a href="/cms-blog-album-web-hosting.html" ><span>CMS Hosting</span></a></th>
+                        <th width="240" align="left"><a href="/web-hosting/control-panel/" ><span>Control Panel Demo</span></a></th>
+                    </tr>
+                    <tr>
+                        <td valign="top">
+                            <a href="/budget-web-hosting.html" ><span>Budget Hosting</span></a><br />
+                            <a href="/web-hosting-value.html" ><span>Value Hosting</span></a><br />
+                            <a href="/web-hosting-plus.html" ><span>Plus Hosting</span></a><br />
+                            <a href="/exclusive-web-hosting.html" ><span>Exclusive Hosting</span></a>
+                        </td>
+                        <td valign="top">
+                            <a href="/joomla-web-hosting.html" ><span>Joomla Hosting</span></a><br />
+                            <a href="/elearning-web-hosting.html" ><span>eLearning Hosting</span></a><br />
+                            <a href="/wordpress-web-hosting.html" ><span>WordPress Hosting</span></a><br />
+							<a href="/4images-web-hosting.html" ><span>4images Hosting</span></a>
+                        </td>
+                        <td valign="top">
+                            <a href="/web-hosting/switch-to-ntc.html" ><span>Switch to NTC</span></a><br />
+                            <a href="/videos/multiple-domain-web-hosting.html" ><span>Video: Multiple Domain Hosting</span></a><br />
+							<a href="/videos/mysql-web-hosting.html" ><span>Video: MySQL Web Hosting</span></a><br />
+                            <a href="/videos/php-hosting.html" ><span>Video: PHP Web Hosting</span></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </li>
+    </ul>
+    
+  </div>
+
+</div>
+<div class="slogan"><img src="/web_hosting_images/default-slogan.gif" /></div><div class="top-order-button"><a href="https://www.ntchosting.com/order/" id="order_now_button"><img src="/web_hosting_images/order-now.png" alt="Order Now" width="241" height="94" border="0" /></a></div>  <div id="before_carousel" class="line5"></div>
+  
+  <div class="line10"></div>
+  <div class="breadcrumbs b_top_va"><a href="/" class="bc_home"><img src="/web_hosting_images/breadcrumbs/home.png" alt="Home" /></a><span class="bc_separator">&gt;</span><a href="/encyclopedia.html">Encyclopedia</a><span class="bc_separator">&gt;</span><a href="/scripting-terminology.html">Scripting</a><span class="bc_separator">&gt;</span><span class="bc_current">PHP in HTML</span> <div class="bc_right"></div><span id="related"></span></div>
+  <div class="line5"></div>
+  <div class="full_width">
+    <h1>PHP in HTML</h1>
+	
+    <a href="/php/">PHP</a> is an HTML-embedded server-side scripting language. Much of its syntax is borrowed from C, Java and <a href="/perl/">Perl</a> with a couple of unique PHP-specific features thrown in. The goal of the language is to allow web developers to write dynamically generated pages quickly. NTC Hosting offers its clients high quality <a href="/php-web-hosting.html">PHP and HTML hosting services</a>. <a href="/data-center/">Our servers</a> are configured so as to ensure maximum performance for both your HTML and PHP-based applications and the non-interruptible functioning of your websites.
+<br />
+<br />
+<a href="/php-web-hosting.html"><img src="/web_hosting_images/php-hosting.jpg" alt="PHP Hosting" align="right" style="margin-bottom:8px; margin-left:10px;" /></a>
+<strong>Table of contents : </strong><br />
+<ul>
+<li><a href="#PHP_in_HTML">PHP in HTML</a></li>
+<li><a href="#PHP_in_HTML_using_short_open_tag">PHP in HTML using <em>short_open_tag</em></a></li>
+<li><a href="#HTML_in_PHP_using_echo">HTML in PHP using echo</a></li>
+<li><a href="#PHP_in_HTML_file_extensions">PHP in HTML - file extensions</a></li>
+<li><a href="#HTML_in_PHP">HTML in PHP</a></li>
+<li><a href="#PHP_with_NTC_Hosting">PHP with NTC Hosting</a></li>
+</ul>
+<h3><a name="PHP_in_HTML"></a>PHP in HTML</h3>
+When building a complex page, at some point you will be faced with the need to combine PHP and HTML to achieve your needed results. At first point, this can seem complicated, since PHP and HTML are two separate languages, but this is not the case. PHP is designed to interact with HTML and PHP <a href="/script.html">scripts</a> can be included in an HTML page without a problem.
+<br />
+<div class="ads1"><script language="JavaScript">
+                        <!--
+                        //-------------------------------------------------
+                        function check_browser(){
+                                        this.ver=navigator.appVersion
+                                        this.dom=document.getElementById?1:0
+                                        this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom)?1:0;
+                                        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+                                        this.ie4=(document.all && !this.dom)?1:0;
+                                        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+                                        this.ns4=(document.layers && !this.dom)?1:0;
+                                        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5);
+                                        return this;
+                        }
+                        //-------------------------------------------------
+                        function check_banner(){
+                                        var bw = new check_browser();
+                                        var PageWidth = (bw.ns4 || bw.ns5) ? innerWidth : document.body.offsetWidth - 20;
+                                        var PageHeight = (bw.ns4 || bw.ns5) ? innerHeight : document.body.offsetHeight - 20;
+                                        if (parent && (PageWidth < 300 || PageHeight < 200)) {
+                                                        var el = document.getElementById('0250369996');
+                                                        el.style.display = "none";
+                                        }
+                        }
+                        //-------------------------------------------------
+                        function banner_links_sh(isc){
+                                var el = document.getElementById('banner_links');
+                                if(el.style.display=='none') el.style.display = 'block';
+                                else{
+                                	if(!isc) return true;
+                                	el.style.display = 'none';
+                                }
+                                return true;
+                        }
+                        //-------------------------------------------------
+                        function google_ad_request_done(google_ads) {
+                                if (google_ads.length < 1 ) return;
+                                var colspana = (google_ads.length<3)?3:google_ads.length;
+                                document.write("<table cellpadding='0' cellspacing='0'  BORDER=0 style='width:940px;background-color:#C51200;border-style:solid;border-width:1px;border-color:#C51200;'>");
+                                document.write("<tr><td align='left' style='padding: 2 2 2 2;background-color:#F2F2F2;border-style:solid;border-width:0 0 1 0;border-color:#F2F2F2;' colspan='"+colspana+"'>");
+                                if (google_info.feedback_url) {
+                                  document.write("<a href='" + google_info.feedback_url +"' style='color:#000000;font-family:Tahoma;font-size: 9px; padding-left:6px; text-decoration:none;'>Ads by Google</a>");
+                                } else {
+                                  document.write("Ads By Google");
+                                }
+                                document.write("</td></tr>");
+                                if (google_ads[0].type == 'text') {
+                                		document.write("<tr>");
+                                        for(i = 0; i < google_ads.length; ++i) {
+                                        		if(i%google_cols==0) document.write("</tr><tr>");
+                                                document.write("<td nowrap style='padding:2 2 2 2;cursor:pointer;cursor:hand;'>" +
+                                                "<table width='100%' height='100%' bgcolor='#F2F2F2' style='border: 2px solid #F2F2F2; padding:3 3 3 3;' cellspacing='1' cellpadding='4'>"+
+                                                "<tr><td id='taw"+i+"' onFocus=\"ss('go to "+google_ads[i].visible_url+"')\"  onMouseOver=\"ss('go to "+google_ads[i].visible_url+"')\" "+
+                                                "onMouseOut=\"cs()\" onClick=\"ga(this,event)\"><a id='aw"+i+"' target='_top' style='font-weight:bold;font-family:Tahoma; font-size:12px;"+
+                                                "color:0000FF;' href='" +  google_ads[i].url + "'>" +
+                                                google_ads[i].line1 + "</a><br>" +
+                                                "<div style='font-family:Tahoma; font-size:11px; color:#000000;'>"+google_ads[i].line2 + "<br>" +
+                                                google_ads[i].line3 + "<br></div>" +
+                                                "<a style='font-family:Tahoma; font-size:11px; color:#C51200;' href='" + google_ads[i].url + "' >" +
+                                                google_ads[i].visible_url +
+                                                "</a></td></tr></table></td>");
+                                        }
+                                        document.write("</tr>");
+                                        /*
+                                        if(google_ads.length < 3 ){
+                                                document.write("<td nowrap><form method='get' action='http://www.google.com/custom' target='_top'>"+
+                                                        "<table bgcolor='#ffffff' border='0'>"+
+                                                        "<tr><td nowrap='nowrap' valign='middle' align='left' height='32'>"+
+                                                        "<a href='http://www.google.com/'>"+
+                                                        "<img src='http://www.google.com/logos/Logo_25wht.gif' border='0' alt='Google' align='middle'></img></a>"+
+                                                        "<input type='text' name='q' size='21' maxlength='255' value=''></input>"+
+                                                        "<input type='image' src='/icons/100ws/searchbut.gif' name='sa' value='Search'></input>"+
+                                                        "<input type='hidden' name='client' value='pub-3460518834604685'></input>"+
+                                                        "<input type='hidden' name='forid' value='1'></input>"+
+                                                        "<input type='hidden' name='channel' value='0974414919'></input>"+
+                                                        "<input type='hidden' name='ie' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='oe' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='cof' value='GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;'></input>"+
+                                                        "<input type='hidden' name='hl' value='en'></input>"+
+                                                        "</td></tr></table>"+
+                                                        "</form></td>");
+                                        }
+                                        */
+                                       // document.write("</tr>");
+                                }
+                                if (google_ads[0].type == 'image') {
+                                  document.write("<tr><td align='center'>" +
+                                        "<a href='" + google_ads[0].url + "'style='text-decoration: none'>" +
+                                        "<img src='" + google_ads[0].image_url +
+                                        "' height='" + google_ads[0].height +
+                                        "' width='" + google_ads[0].width +
+                                        "' border='0'></a></td></tr>");
+                                }
+                                document.write ("</table>");
+                        }
+						//-------------------------------------------------
+						function ss(w,id) {window.status = w;return true;}
+						//-------------------------------------------------
+						function cs(){window.status='';}
+						//-------------------------------------------------
+						function ca(a) {top.location.href=document.getElementById(a).href;}
+						//-------------------------------------------------
+						function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}}else {h = e.srcElement;f = h.parentNode;if (f) p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;top.location.href=document.getElementById(a).href;}}
+						//-------------------------------------------------
+                        window.onload = check_banner;
+                        -->
+                        </script>
+
+                        <script language="JavaScript">
+                        <!--
+                        google_ad_client = "pub-3460518834604685";
+                        google_ad_channel ="1335349739";
+                        google_ad_output = "js";
+                        google_max_num_ads = 5;
+                        google_cols = 5;
+                        google_safe     = "medium";
+                        google_feedback = "on";
+                        google_ad_type  = "text";
+                        google_color_line = "ff0000";
+                        -->
+          	</script>
+          	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+          	<noscript>
+               <img height=1 width=1 border=0 src="http://pagead2.googlesyndication.com/pagead/imp.gif?client=pub-3460518834604685&event=noscript"/><br />
+			</noscript></div>
+
+<br />
+In an HTML page, PHP code is enclosed within special PHP tags. When a visitor opens the page, the server processes the PHP code and then sends the output (not the PHP code itself) to the visitor's browser. Actually it is quite simple to integrate HTML and PHP. A PHP script can be treated as an HTML page, with bits of PHP inserted here and there. Anything in a PHP script that is not contained within <strong class="red_text">&lt;?php ?&gt;</strong> tags is ignored by the PHP compiler and passed directly to the web browser. If you look at the example below you can see what a full PHP script might look like: 
+<br /><br />
+<h3>Recommended usage:</h3>
+<div class="sample">
+<p>&lt;html&gt;<br />
+&lt;head&gt;&lt;/head&gt;<br />
+&lt;body class=&quot;page_bg&quot;&gt;<br />
+Hello, today is <strong class="red_text">&lt;?php</strong> echo date('l, F jS, Y'); <strong class="red_text">?&gt;</strong>.<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</p>
+</div>
+The code above is simply HTML, with just a bit of PHP that prints out today's date using the built-in date function. As mentioned above, all of the plain HTML in the code above will be ignored by the PHP compiler and passed through to the web browser untouched. 
+<br /><br />
+See how easy that is? Integrating PHP and HTML is really very simple. Just remember that at its core, a PHP script is just an HTML page with some PHP sprinkled through it. If you want, you can create a PHP script that only has HTML in it and no <strong class="red_text">&lt;?php ?&gt;</strong> tags, and it will work just fine.
+<br /><br /> 
+<h3>More advanced techniques:</h3>
+<div class="sample">
+  <p>&lt;html&gt;<br />
+&lt;head&gt;&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;ul&gt;
+<br />
+<strong class="red_text">&lt;?php</strong> for($i=1;$i&lt;=5;$i++){ <strong class="red_text">?&gt;</strong><br />
+&lt;li&gt;Menu Item <strong class="red_text">&lt;?php</strong> echo $i; <strong class="red_text">?&gt;</strong>&lt;/li&gt;
+<br />
+<strong class="red_text">&lt;?php</strong> } <strong class="red_text">?&gt;</strong><br />
+&lt;/ul&gt;
+<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</p>
+</div>
+and the result is: 
+<div class="sample">
+<ul>
+<li>Menu Item 1</li> 
+<li>Menu Item 2</li> 
+<li>Menu Item 3</li> 
+<li>Menu Item 4</li> 
+<li>Menu Item 5</li> 
+</ul>
+</div>
+<h3><a name="PHP_in_HTML_using_short_open_tag"></a>PHP in HTML using <em>short_open_tag</em></h3>
+If you want to shorten your code as much as possible, you can go for the short_tags option. This will save you from typing <strong class="red_text">&lt;?php</strong> at the beginning of the code, shortening it to just <strong class="red_text">&lt;?</strong>. In order to enable this, you should update the php.ini file and turn the &quot;short_tags&quot; setting from &quot;Off&quot; to &quot;On&quot;. While on most servers this setting is already turned on, it's always best to check beforehand. A problem that can occur if using short tags is a conflict with the <a href="/php/php-xml-parser.html">XML</a> usage. For XML, the <strong class="red_text">&lt;?</strong> syntax will start a processing function. To avoid this problem, the alternative <strong class="red_text">&lt;?</strong>= tag can be used.
+<br /><div class="ads2"><script language="JavaScript">
+                        <!--
+                        //-------------------------------------------------
+                        function check_browser(){
+                                        this.ver=navigator.appVersion
+                                        this.dom=document.getElementById?1:0
+                                        this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom)?1:0;
+                                        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+                                        this.ie4=(document.all && !this.dom)?1:0;
+                                        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+                                        this.ns4=(document.layers && !this.dom)?1:0;
+                                        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5);
+                                        return this;
+                        }
+                        //-------------------------------------------------
+                        function check_banner(){
+                                        var bw = new check_browser();
+                                        var PageWidth = (bw.ns4 || bw.ns5) ? innerWidth : document.body.offsetWidth - 20;
+                                        var PageHeight = (bw.ns4 || bw.ns5) ? innerHeight : document.body.offsetHeight - 20;
+                                        if (parent && (PageWidth < 300 || PageHeight < 200)) {
+                                                        var el = document.getElementById('0250369996');
+                                                        el.style.display = "none";
+                                        }
+                        }
+                        //-------------------------------------------------
+                        function banner_links_sh(isc){
+                                var el = document.getElementById('banner_links');
+                                if(el.style.display=='none') el.style.display = 'block';
+                                else{
+                                	if(!isc) return true;
+                                	el.style.display = 'none';
+                                }
+                                return true;
+                        }
+                        //-------------------------------------------------
+                        function google_ad_request_done(google_ads) {
+                                if (google_ads.length < 1 ) return;
+                                var colspana = (google_ads.length<3)?3:google_ads.length;
+                                document.write("<table cellpadding='0' cellspacing='0'  BORDER=0 style='width:940px;background-color:#F2F2F2;border-style:solid;border-width:1px;border-color:#F2F2F2;'>");
+                                document.write("<tr><td align='left' style='padding: 2 2 2 2;background-color:#F2F2F2;border-style:solid;border-width:0 0 1 0;border-color:#F2F2F2;' colspan='"+colspana+"'>");
+                                if (google_info.feedback_url) {
+                                  document.write("<a href='" + google_info.feedback_url +"' style='color:#000000;font-family:Tahoma;font-size: 9px; padding-left:6px; text-decoration:none;'>Ads by Google</a>");
+                                } else {
+                                  document.write("Ads By Google");
+                                }
+                                document.write("</td></tr>");
+                                if (google_ads[0].type == 'text') {
+                                		document.write("<tr>");
+                                        for(i = 0; i < google_ads.length; ++i) {
+                                        		if(i%google_cols==0) document.write("</tr><tr>");
+                                                document.write("<td nowrap style='padding:2 2 2 2;cursor:pointer;cursor:hand;'>" +
+                                                "<table width='100%' height='100%' bgcolor='#F2F2F2' style='border: 2px solid #F2F2F2; padding:3 3 3 3;' cellspacing='1' cellpadding='4'>"+
+                                                "<tr><td id='taw"+i+"' onFocus=\"ss('go to "+google_ads[i].visible_url+"')\"  onMouseOver=\"ss('go to "+google_ads[i].visible_url+"')\" "+
+                                                "onMouseOut=\"cs()\" onClick=\"ga(this,event)\"><a id='aw"+i+"' target='_top' style='font-weight:bold;font-family:Tahoma; font-size:12px;"+
+                                                "color:0000FF;' href='" +  google_ads[i].url + "'>" +
+                                                google_ads[i].line1 + "</a><br>" +
+                                                "<div style='font-family:Tahoma; font-size:11px; color:#000000;'>"+google_ads[i].line2 + "<br>" +
+                                                google_ads[i].line3 + "<br></div>" +
+                                                "<a style='font-family:Tahoma; font-size:11px; color:#C51200;' href='" + google_ads[i].url + "' >" +
+                                                google_ads[i].visible_url +
+                                                "</a></td></tr></table></td>");
+                                        }
+                                        document.write("</tr>");
+                                        /*
+                                        if(google_ads.length < 3 ){
+                                                document.write("<td nowrap><form method='get' action='http://www.google.com/custom' target='_top'>"+
+                                                        "<table bgcolor='#ffffff' border='0'>"+
+                                                        "<tr><td nowrap='nowrap' valign='middle' align='left' height='32'>"+
+                                                        "<a href='http://www.google.com/'>"+
+                                                        "<img src='http://www.google.com/logos/Logo_25wht.gif' border='0' alt='Google' align='middle'></img></a>"+
+                                                        "<input type='text' name='q' size='21' maxlength='255' value=''></input>"+
+                                                        "<input type='image' src='/icons/100ws/searchbut.gif' name='sa' value='Search'></input>"+
+                                                        "<input type='hidden' name='client' value='pub-3460518834604685'></input>"+
+                                                        "<input type='hidden' name='forid' value='1'></input>"+
+                                                        "<input type='hidden' name='channel' value='0974414919'></input>"+
+                                                        "<input type='hidden' name='ie' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='oe' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='cof' value='GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;'></input>"+
+                                                        "<input type='hidden' name='hl' value='en'></input>"+
+                                                        "</td></tr></table>"+
+                                                        "</form></td>");
+                                        }
+                                        */
+                                       // document.write("</tr>");
+                                }
+                                if (google_ads[0].type == 'image') {
+                                  document.write("<tr><td align='center'>" +
+                                        "<a href='" + google_ads[0].url + "'style='text-decoration: none'>" +
+                                        "<img src='" + google_ads[0].image_url +
+                                        "' height='" + google_ads[0].height +
+                                        "' width='" + google_ads[0].width +
+                                        "' border='0'></a></td></tr>");
+                                }
+                                document.write ("</table>");
+                        }
+						//-------------------------------------------------
+						function ss(w,id) {window.status = w;return true;}
+						//-------------------------------------------------
+						function cs(){window.status='';}
+						//-------------------------------------------------
+						function ca(a) {top.location.href=document.getElementById(a).href;}
+						//-------------------------------------------------
+						function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}}else {h = e.srcElement;f = h.parentNode;if (f) p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;top.location.href=document.getElementById(a).href;}}
+						//-------------------------------------------------
+                        window.onload = check_banner;
+                        -->
+                        </script>
+
+                        <script language="JavaScript">
+                        <!--
+                        google_ad_client = "pub-3460518834604685";
+                        google_ad_channel ="1335349739";
+                        google_ad_output = "js";
+                        google_max_num_ads = 5;
+                        google_cols = 5;
+                        google_safe     = "medium";
+                        google_feedback = "on";
+                        google_ad_type  = "text";
+                        google_color_line = "ff0000";
+                        -->
+          	</script>
+          	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+          	<noscript>
+               <img height=1 width=1 border=0 src="http://pagead2.googlesyndication.com/pagead/imp.gif?client=pub-3460518834604685&event=noscript"/><br />
+			</noscript></div>
+
+<br />
+<h3>PHP in HTML using short_tags:</h3>
+<div class="sample">
+<p>&lt;html&gt;<br />
+&lt;head&gt;&lt;/head&gt;<br />
+&lt;body class=&quot;page_bg&quot;&gt;<br />
+Hello, today is <strong class="red_text">&lt;?</strong>=date('l, F jS, Y'); <strong class="red_text">?&gt;</strong>.<br />
+&lt;/body&gt;<br />
+&lt;/html&gt;</p>
+</div>
+Have in mind that if you want to build a website compatible with as many platforms as possible, you should not rely on short_tags.
+<br /><br />
+<h3><a name="HTML_in_PHP_using_echo"></a>HTML in PHP using echo</h3>
+A possible way to integrate HTML tags in a PHP file is via the <a href="/echo.html">echo command</a>:
+<br /><br />
+<h3>Possible yet not recommended usage:</h3>
+<div class="sample" style="float:left; width:430px;">
+  <p><strong class="red_text">&lt;?php</strong><br />
+    echo &quot;&lt;html&gt;&quot;;<br />
+echo &quot;&lt;head&gt;&lt;/head&gt;&quot;;<br />
+echo &quot;&lt;body class=\&quot;page_bg\&quot;&gt;&quot;;<br />
+echo &quot;Hello, today is &quot;;<br />
+ echo date('l, F jS, Y');</p>
+  <p>//other php code here</p>
+  <p>echo &quot;&lt;/body&gt;&quot;;<br />
+echo &quot;&lt;/html&gt;&quot;;<br />
+    <strong class="red_text">?&gt;</strong></p>
+</div>
+<div style="width:484px; float:right;">
+    <script language="javascript" type="text/javascript">
+  function get_plan_features(plan)
+  {
+	  var arr = new Array();
+	  arr[31921] = '50 GB Disk Space<br />500 GB Monthly Traffic<br />PHP4, PHP5 and PHP6 Support<br />Perl Scripting<br />Python<br />Server Side Includes<br />1 PostgreSQL database<br />80 MB PostgreSQL Storage<br />10 MySQL databases<br />100 MB MySQL Storage';
+	  arr[31893] = '200 GB Disk Space<br />1500 GB Monthly Traffic<br />PHP4, PHP5 and PHP6 Support<br />Perl Scripting<br />Python<br />Server Side Includes<br />3 PostgreSQL databases<br />160 MB PostgreSQL Storage<br />15 MySQL databases<br />150 MB MySQL Storage';
+	  arr[11442] = '800 GB Disk Space<br />4500 GB Monthly Traffic<br />PHP4, PHP5 and PHP6 Support<br />Perl Scripting<br />Python<br />Server Side Includes<br />5 PostgreSQL databases<br />160 MB PostgreSQL Storage<br />20 MySQL databases<br />200 MB MySQL Storage';
+	  document.getElementById('features_string').innerHTML = arr[plan];
+  }
+  </script>
+  <form action="https://www.ntchosting.com/order/">
+  <div class="special_offer_box" style="margin-bottom:10px;"><div class="ecommerce_header">
+    <h2>Developer Hosting</h2></div><br clear="all" />
+  <div style="padding:12px;">
+    <table width="100%" border="0" cellspacing="5" cellpadding="0">
+      <tr>
+        <td><strong>Choose a PHP version</strong></td>
+        <td><select name="php" style="width:200px;">
+          <option value="php4">PHP4</option>
+          <option value="php5" selected="selected">PHP5</option>
+          <option value="php6">PHP6</option>
+        </select></td>
+      </tr>
+      <tr>
+        <td valign="top"><strong>Choose a Hosting Package</strong></td>
+        <td><select name="plan" style="width:200px;" onchange="get_plan_features(this.options[this.selectedIndex].value)">
+          <option value="31921" selected="selected">Value @ $7.95/mo</option>
+          <option value="31893">Plus @ $9.95/mo</option>
+          <option value="11442">Exclusive @ $14.95/mo</option>
+        </select><br />&nbsp;
+        <div id="features_string" style="font-weight:bold">
+        50 GB Disk Space<br />
+        500 GB Monthly Traffic<br />
+        PHP4, PHP5 and PHP6 Support<br />
+        Perl Scripting<br />
+        Python<br />
+        Server Side Includes<br />
+        1 PostgreSQL database<br />
+        80 MB PostgreSQL Storage<br />
+        10 MySQL databases<br />
+        100 MB MySQL Storage
+        </div>
+    	</td>
+      </tr>
+    </table>
+    <p align="center"><input type="submit" name="buyButton" id="buyButton" class="red_button" value="Buy Developer Hosting &raquo;" /></p>
+</div>
+  </div>
+</form></div>
+This will, however, affect the HTML Code Coloring option in most HTML/PHP editors, which allows for easy understanding of the role of HTML tags. You should escape each double quote within the HTML code with a backslash.
+<br /><br />
+<h3><a name="PHP_in_HTML_file_extensions"></a>PHP in HTML - file extensions</h3>
+When a given file contains PHP code, it must have a PHP extension. In most cases this is .php, but you can also configure the <a href="/apache2-htaccess.html">.htaccess</a> <a href="/internet/file.html">file</a> to read the PHP code in the HTML file without renaming it or changing its extension.  Below you can view the &quot;handlers&quot;, which will have to be added in order to achieve this
+<br /><br />
+<h3>For a normally configured web server:</h3>
+<div class="sample"><p>AddHandler cgi-script .html .htm</p></div>
+<h3>A web server running FastCGI:</h3>
+<div class="sample"><p>AddHandler fcgid-script .html .htm</p></div>
+<div class="note"><strong>Note:</strong> this is tested and works with the NTC web hosting servers. If you are using a different hosting provider, consult them for assistance. Additionally, if you are faced with constant problems there, you can consider <a href="/web-hosting/switch-to-ntc.html">switching to NTC Hosting</a> in order to get the PHP optimized stable servers you need.</div>
+<br />
+<h3><a name="HTML_in_PHP"></a>HTML in PHP</h3>
+You can also use HTML code in a <a href="/php/php-script.html">PHP script</a>. This can be very useful if you have built your whole page in PHP, but want to include a custom HTML form, for example. All that you need to do is reverse the order of the HTML and PHP opening tags, opening the page with PHP:
+<br /><br />
+<h3>Using HTML in PHP:</h3>
+<div class="sample"><strong class="red_text">&lt;?php</strong><br />
+$Fname = $_POST[&quot;Fname&quot;];<br />
+$Lname = $_POST[&quot;Lname&quot;];<br />
+<strong class="red_text">?&gt;</strong><br />
+&lt;html&gt;<br />
+&lt;head&gt;<br />
+&lt;title&gt;Personal INFO&lt;/title&gt;<br />
+&lt;/head&gt;<br />
+&lt;body&gt;<br />
+&lt;form method=&quot;post&quot; action=&quot;&lt;?php echo $PHP_SELF;?&gt;&quot;&gt;<br />
+First Name:&lt;input type=&quot;text&quot; size=&quot;12&quot; maxlength=&quot;12&quot; name=&quot;Fname&quot;&gt;&lt;br /&gt;<br />
+Last Name:&lt;input type=&quot;text&quot; size=&quot;12&quot; maxlength=&quot;36&quot; name=&quot;Lname&quot;&gt;&lt;br /&gt;&lt;/form&gt;<br />
+<strong class="red_text">&lt;?</strong><br />
+echo &quot;Hello, &quot;.$Fname.&quot; &quot;.$Lname.&quot;.&lt;br /&gt;&quot;;<br />
+<strong class="red_text">?&gt;</strong></div>
+While this looks a bit complicated, it actually saves you a lot of code. Here, we are using the $PHP_SELF super global, which allows us to use the value of the fields, specified under it, in the same file. Usually, for such forms two files are created - the first one is the HTML form itself and the second one is the backend PHP file, which does all the work. 
+<br /><div class="ads1"><script language="JavaScript">
+                        <!--
+                        //-------------------------------------------------
+                        function check_browser(){
+                                        this.ver=navigator.appVersion
+                                        this.dom=document.getElementById?1:0
+                                        this.ie6=(this.ver.indexOf("MSIE 6")>-1 && this.dom)?1:0;
+                                        this.ie5=(this.ver.indexOf("MSIE 5")>-1 && this.dom)?1:0;
+                                        this.ie4=(document.all && !this.dom)?1:0;
+                                        this.ns5=(this.dom && parseInt(this.ver) >= 5) ?1:0;
+                                        this.ns4=(document.layers && !this.dom)?1:0;
+                                        this.bw=(this.ie5 || this.ie4 || this.ns4 || this.ns5);
+                                        return this;
+                        }
+                        //-------------------------------------------------
+                        function check_banner(){
+                                        var bw = new check_browser();
+                                        var PageWidth = (bw.ns4 || bw.ns5) ? innerWidth : document.body.offsetWidth - 20;
+                                        var PageHeight = (bw.ns4 || bw.ns5) ? innerHeight : document.body.offsetHeight - 20;
+                                        if (parent && (PageWidth < 300 || PageHeight < 200)) {
+                                                        var el = document.getElementById('0250369996');
+                                                        el.style.display = "none";
+                                        }
+                        }
+                        //-------------------------------------------------
+                        function banner_links_sh(isc){
+                                var el = document.getElementById('banner_links');
+                                if(el.style.display=='none') el.style.display = 'block';
+                                else{
+                                	if(!isc) return true;
+                                	el.style.display = 'none';
+                                }
+                                return true;
+                        }
+                        //-------------------------------------------------
+                        function google_ad_request_done(google_ads) {
+                                if (google_ads.length < 1 ) return;
+                                var colspana = (google_ads.length<3)?3:google_ads.length;
+                                document.write("<table cellpadding='0' cellspacing='0'  BORDER=0 style='width:940px;background-color:#C51200;border-style:solid;border-width:1px;border-color:#C51200;'>");
+                                document.write("<tr><td align='left' style='padding: 2 2 2 2;background-color:#F2F2F2;border-style:solid;border-width:0 0 1 0;border-color:#F2F2F2;' colspan='"+colspana+"'>");
+                                if (google_info.feedback_url) {
+                                  document.write("<a href='" + google_info.feedback_url +"' style='color:#000000;font-family:Tahoma;font-size: 9px; padding-left:6px; text-decoration:none;'>Ads by Google</a>");
+                                } else {
+                                  document.write("Ads By Google");
+                                }
+                                document.write("</td></tr>");
+                                if (google_ads[0].type == 'text') {
+                                		document.write("<tr>");
+                                        for(i = 0; i < google_ads.length; ++i) {
+                                        		if(i%google_cols==0) document.write("</tr><tr>");
+                                                document.write("<td nowrap style='padding:2 2 2 2;cursor:pointer;cursor:hand;'>" +
+                                                "<table width='100%' height='100%' bgcolor='#F2F2F2' style='border: 2px solid #F2F2F2; padding:3 3 3 3;' cellspacing='1' cellpadding='4'>"+
+                                                "<tr><td id='taw"+i+"' onFocus=\"ss('go to "+google_ads[i].visible_url+"')\"  onMouseOver=\"ss('go to "+google_ads[i].visible_url+"')\" "+
+                                                "onMouseOut=\"cs()\" onClick=\"ga(this,event)\"><a id='aw"+i+"' target='_top' style='font-weight:bold;font-family:Tahoma; font-size:12px;"+
+                                                "color:0000FF;' href='" +  google_ads[i].url + "'>" +
+                                                google_ads[i].line1 + "</a><br>" +
+                                                "<div style='font-family:Tahoma; font-size:11px; color:#000000;'>"+google_ads[i].line2 + "<br>" +
+                                                google_ads[i].line3 + "<br></div>" +
+                                                "<a style='font-family:Tahoma; font-size:11px; color:#C51200;' href='" + google_ads[i].url + "' >" +
+                                                google_ads[i].visible_url +
+                                                "</a></td></tr></table></td>");
+                                        }
+                                        document.write("</tr>");
+                                        /*
+                                        if(google_ads.length < 3 ){
+                                                document.write("<td nowrap><form method='get' action='http://www.google.com/custom' target='_top'>"+
+                                                        "<table bgcolor='#ffffff' border='0'>"+
+                                                        "<tr><td nowrap='nowrap' valign='middle' align='left' height='32'>"+
+                                                        "<a href='http://www.google.com/'>"+
+                                                        "<img src='http://www.google.com/logos/Logo_25wht.gif' border='0' alt='Google' align='middle'></img></a>"+
+                                                        "<input type='text' name='q' size='21' maxlength='255' value=''></input>"+
+                                                        "<input type='image' src='/icons/100ws/searchbut.gif' name='sa' value='Search'></input>"+
+                                                        "<input type='hidden' name='client' value='pub-3460518834604685'></input>"+
+                                                        "<input type='hidden' name='forid' value='1'></input>"+
+                                                        "<input type='hidden' name='channel' value='0974414919'></input>"+
+                                                        "<input type='hidden' name='ie' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='oe' value='ISO-8859-1'></input>"+
+                                                        "<input type='hidden' name='cof' value='GALT:#008000;GL:1;DIV:#336699;VLC:663399;AH:center;BGC:FFFFFF;LBGC:336699;ALC:0000FF;LC:0000FF;T:000000;GFNT:0000FF;GIMP:0000FF;FORID:1;'></input>"+
+                                                        "<input type='hidden' name='hl' value='en'></input>"+
+                                                        "</td></tr></table>"+
+                                                        "</form></td>");
+                                        }
+                                        */
+                                       // document.write("</tr>");
+                                }
+                                if (google_ads[0].type == 'image') {
+                                  document.write("<tr><td align='center'>" +
+                                        "<a href='" + google_ads[0].url + "'style='text-decoration: none'>" +
+                                        "<img src='" + google_ads[0].image_url +
+                                        "' height='" + google_ads[0].height +
+                                        "' width='" + google_ads[0].width +
+                                        "' border='0'></a></td></tr>");
+                                }
+                                document.write ("</table>");
+                        }
+						//-------------------------------------------------
+						function ss(w,id) {window.status = w;return true;}
+						//-------------------------------------------------
+						function cs(){window.status='';}
+						//-------------------------------------------------
+						function ca(a) {top.location.href=document.getElementById(a).href;}
+						//-------------------------------------------------
+						function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p = "";r = "";g = e.target;if (g) {t = g.id;f = g.parentNode;if (f) {p = f.id;h = f.parentNode;if (h)r = h.id;}}else {h = e.srcElement;f = h.parentNode;if (f) p = f.id;t = h.id;}if (t==a || p==a || r==a)return true;top.location.href=document.getElementById(a).href;}}
+						//-------------------------------------------------
+                        window.onload = check_banner;
+                        -->
+                        </script>
+
+                        <script language="JavaScript">
+                        <!--
+                        google_ad_client = "pub-3460518834604685";
+                        google_ad_channel ="1335349739";
+                        google_ad_output = "js";
+                        google_max_num_ads = 5;
+                        google_cols = 5;
+                        google_safe     = "medium";
+                        google_feedback = "on";
+                        google_ad_type  = "text";
+                        google_color_line = "ff0000";
+                        -->
+          	</script>
+          	<script language="JavaScript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+          	<noscript>
+               <img height=1 width=1 border=0 src="http://pagead2.googlesyndication.com/pagead/imp.gif?client=pub-3460518834604685&event=noscript"/><br />
+			</noscript></div>
+
+<br />
+If you already have a complicated <a href="/php/php-website.html">PHP application</a>, which relies on a great number of files, and you just want to keep everything as simple as possible, this can be of great assistance.
+<br />
+<br />
+<h3><a name="PHP_with_NTC_Hosting"></a>PHP with NTC Hosting</h3>
+NTC Hosting offers its clients an ultimate <a href="/php-web-hosting.html">web hosting solution</a>. All our <a href="/web-hosting/">web hosting</a> plans provide support for HTML and give you the possibility to choose between <a href="/php/php4.html">PHP4</a>, <a href="/php/php5.html">PHP5</a> and <a href="/php/php6-preview.html">PHP6</a>.
+    <br />
+    <br />
+
+  </div>
+  <br clear="all" /><div class="top_va"> <a href="javascript:;" id="mycarousel-prev">
+    <div class="top_va_left"></div></a>
+    <div class="top_va_center_internal">
+      <div id="top_va_carousel_internal">
+        <ul>
+          <li><img src="/web_hosting_images/video-area/how-to-embed-php-html-files.png" border="0" alt="Learn how to embed PHP code directly into HTML files" title="Learn how to embed PHP code directly into HTML files" />
+          <div class="noclick"><a class="carousel_box_link" style="bottom:0; margin-left:500px;" href="http://demo.ntchosting.com/mysql/?auto_login=true" target="_blank" alt="Hepsia MySQL Database Manager Demo" title="Hepsia MySQL Database Manager Demo"></a></div>            
+          </li>      
+          <li><img src="/web_hosting_images/video-area/popular-scipting-languages-supported.png" border="0" alt="All the popular scripting languages are supported with NTC Hosting" title="All the popular scripting languages are supported with NTC Hosting" />
+          <div class="noclick"><a class="carousel_box_link" style="bottom:0; margin-left:25px;" href="http://demo.ntchosting.com/statistics/server-information/?auto_login=true" target="_blank" alt="Hepsia Email Manager Demo" title="Hepsia Email Manager Demo"></a></div>  </li>
+            <li><img src="/web_hosting_images/video-area/50-plus-web-applications-installer.png" border="0" alt="Install more than 50 popular PHP apps with a single click" title="Install more than 50 popular PHP apps with a single click" />
+            <div class="noclick"><a class="carousel_box_link" style="bottom:0; margin-left:95px;" href="http://demo.ntchosting.com/installer/software/?auto_login=true" target="_blank" alt="Hepsia Control Panel Demo" title="Hepsia Control Panel Demo"></a></div>
+          </li>
+          <li><img src="/web_hosting_images/video-area/fully-featured-control-panel.png" border="0" alt="A free and fully featured, easy-to-use control panel" title="A free and fully featured, easy-to-use control panel" />
+            <div class="noclick"><a class="carousel_box_link" style="bottom:0; margin-left:386px;" href="http://demo.ntchosting.com/?auto_login=true" target="_blank" alt="Hepsia Control Panel Demo" title="Hepsia Control Panel Demo"></a></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <a href="javascript:;" id="mycarousel-next"><div class="top_va_right"></div></a>
+    <div id="dots_div">
+      <div class="jcarousel-control">
+	  <script language="javascript">var currDot = 1; var maxDots = 4;</script>
+      <a onclick="changeDot('1');" class="carousel_dot_current" id="carousel_dot_1" href="#"><span class="carousel_dot_text">1</span></a>
+      <a onclick="changeDot('2');" class="carousel_dot" id="carousel_dot_2" href="#"><span class="carousel_dot_text">2</span></a>
+      <a onclick="changeDot('3');" class="carousel_dot" id="carousel_dot_3" href="#"><span class="carousel_dot_text">3</span></a>
+      <a onclick="changeDot('4');" class="carousel_dot" id="carousel_dot_4" href="#"><span class="carousel_dot_text">4</span></a>
+      </div>
+      </div>      
+    <br clear="all" />
+  </div>
+</div>
+<span id="related_container"><select name="websites3" id="websites3" style="width:200px;" onchange="if(this.options[this.selectedIndex].value!=0) document.location.href=this.options[this.selectedIndex].value;">
+  <option value="0" selected="selected">Related Pages:</option>
+  <option value="/script.html">Script</option>
+  <option value="/php/">PHP</option>
+  <option value="/frameworks.html">PHP Frameworks</option>
+  <option value="/php/php4.html">PHP4 features</option>
+  <option value="/php/php5.html">PHP5 overview</option>
+  <option value="/php/php4-php5-comparison-part1.html">PHP 4 and PHP 5 Comparison</option>
+  <option value="/php/php6-preview.html">PHP 6 Preview</option>
+  <option value="/php/php-string.html">PHP string</option>
+  <option value="/php/php-in-html.html">PHP in HTML</option>
+  <option value="/php/php-website.html">PHP Website</option>
+  <option value="/php/zend-optimizer-with-php-hosting.html">PHP Zend Optimizer</option>
+  <option value="/php/ioncube-encoded-php-scripts.html">ionCube Loader</option>
+  <option value="/php/imagemagick.html">ImageMagick</option>
+  <option value="/php/gd-library.html">GD Library</option>
+  <option value="/php/php-script.html">PHP Script</option>
+  <option value="/php/php-xml-parser.html">PHP's XML Parser</option>
+  <option value="/php/php-ini-settings-file.html">PHP.INI - PHP4, PHP5, PHP6 confuguration file</option>
+  <option value="/perl/">Perl</option>
+  <option value="/perl/modules.html">Perl Modules</option>
+  <option value="/perl/over-3400-perl-modules.html">Over 3400 Perl Modules</option>
+  <option value="/perl/script.html">Perl Script</option>
+  <option value="/python/">Python</option>
+  <option value="/string.html">String</option>
+  <option value="/variable.html">Variable</option>
+  <option value="/echo.html">Echo</option>
+  <option value="/html/table.html">Table</option>
+  <option value="/html/row.html">Row</option>
+  <option value="/html/column.html">Column</option>
+  <option value="/html/background.html">Background</option>
+</select></span>
+<div id="livechatside">
+<div id="scgmZv" style="display:inline"></div>
+</div>
+
+<div id="feedbackside">
+<a href="#" rel="#loginOverlay" name="/includes/feedback.php" title="Feel free to contact our Customer Service Team."><img src="/web_hosting_images/feedback.png" width="33" height="115" align="left" id="feedback_icon" /></a>
+</div>
+
+<div id="history">
+<img src="/web_hosting_images/history.png" width="33" height="115" align="left" id="history_icon" />
+	<span id="history_popup">
+    	<ul class="history_list">
+    	        <li class="current"><a href="/php/php-in-html.html">PHP in HTML</a></li>
+    	        </ul>
+    </span>
+</div>
+
+<!-- SHARE THIS -->
+<div id="sharethis"><img src="/web_hosting_images/share.png" width="33" height="115" align="left" id="sharethis_icon" />
+	<span id="sharethis_popup">
+    	            <a href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&t=NTC+Hosting%3A+PHP+in+HTML" title="Facebook" target="_blank"><img src="/web_hosting_images/social_icons/facebook.png"></a> <a href="http://twitter.com/home?status=NTC+Hosting%3A+PHP+in+HTML+http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html" title="Twitter" target="_blank"><img src="/web_hosting_images/social_icons/twitter.png"></a> <a href="http://www.digg.com/submit?phase=2&url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="Digg" target="_blank"><img src="/web_hosting_images/social_icons/digg.png"></a> <a href="mailto:?subject=NTC+Hosting%3A+PHP+in+HTML&body=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html" title="E-mail" target="_blank"><img src="/web_hosting_images/social_icons/email.png"></a>
+            <div class="line5"></div>
+            <a href="http://www.google.com/reader/link?title=NTC+Hosting%3A+PHP+in+HTML&url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html" title="Google Buzz" target="_blank"><img src="/web_hosting_images/social_icons/google-buzz.png"></a> <a href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="StumbleUpon" target="_blank"><img src="/web_hosting_images/social_icons/stumbleupon.png"></a> <a href="http://del.icio.us/post?url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML&notes=NTC+Hosting%3A+PHP+in+HTML" title="Delicious" target="_blank"><img src="/web_hosting_images/social_icons/delicious.png"></a> <a href="http://www.google.com/bookmarks/mark?op=edit&bkmk=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML&annotation=NTC+Hosting%3A+PHP+in+HTML" title="Google Bookmarks" target="_blank"><img src="/web_hosting_images/social_icons/google.png"></a>
+            <div class="line5"></div>
+            <a href="http://www.myspace.com/Modules/PostTo/Pages/?u=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&t=NTC+Hosting%3A+PHP+in+HTML" title="Myspace" target="_blank"><img src="/web_hosting_images/social_icons/myspace.png"></a> <a href="http://technorati.com/faves?add=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="Technorati" target="_blank"><img src="/web_hosting_images/social_icons/technorati.png"></a> <a href="http://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML&source=http%3A%2F%2Fwww.ntchosting.com" title="Linkedin" target="_blank"><img src="/web_hosting_images/social_icons/linkedin.png"></a> <a href="http://www.reddit.com/submit?url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="Reddit" target="_blank"><img src="/web_hosting_images/social_icons/reddit.png"></a>
+            <div class="line5"></div>
+            <a href="http://slashdot.org/bookmark.pl?url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="Slashdot" target="_blank"><img src="/web_hosting_images/social_icons/slashdot.png"></a> <a href="http://www.friendfeed.com/share?url=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&title=NTC+Hosting%3A+PHP+in+HTML" title="Friendfeed" target="_blank"><img src="/web_hosting_images/social_icons/friendfeed.png"></a> <a href="http://posterous.com/share?linkto=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html" title="Posterous" target="_blank"><img src="/web_hosting_images/social_icons/posterous.png"></a> <a href="http://www.tumblr.com/share?v=3&u=http%3A%2F%2Fwww.ntchosting.com%2Fphp%2Fphp-in-html.html&t=NTC+Hosting%3A+PHP+in+HTML" title="Tumblr" target="_blank"><img src="/web_hosting_images/social_icons/tumblr.png"></a>
+    </span>
+</div>
+<!-- END SHARE THIS -->
+
+<div id="footer_all">
+	<div id="footer_seo">    	<div class="fcol">
+        	<strong>Company Information</strong>
+        	<ul>
+              <li><a href="/about-us/">Company</a></li>
+              <li><a href="/web-hosting-news/">Hosting News</a></li>
+              <li><a href="/data-center/">Data Centers</a></li>
+              <li><a href="/contact-us/">Contacts</a></li>
+              <li><a href="/support/">Support</a></li>
+              <li><a href="/partners/">Partners &amp; Affiliates</a></li>
+              <li><a href="/terms/privacy-policy.html">Privacy Policy</a></li>
+              <li><a href="/terms/">Terms and Conditions</a></li>
+              <li><a href="/service-level-guarantees/">Service Level Guarantees</a></li>
+            </ul>
+        </div>
+    	<div class="fcol">
+        	<strong>Web Hosting Services</strong>
+        	<ul>
+              <li><a href="/web-hosting.html">Web Hosting</a></li>
+              <li><a href="/virtual-private-server-hosting.html">Virtual Private Servers (VPS)</a></li>
+              <li><a href="/dedicated-server-hosting.html">Dedicated Server Hosting</a></li>
+              <li><a href="/domain-name-web-site-hosting.html">Domain Hosting</a></li>
+              <li><a href="/multiple-domain-hosting.html">Multiple Domains Hosting</a></li>
+              <li><a href="/unlimited-domains-hosting.html">Unlimited Domain Hosting</a></li>
+              <li><a href="/email-hosting.html">eMail Hosting</a></li>
+              <li><a href="/ftp-hosting.html">FTP Hosting</a></li>
+              <li><a href="/ecommerce-web-hosting.html">eCommerce Hosting</a></li>
+            </ul>
+        </div>
+    	<div class="fcol">
+        	<strong>Web Hosting Solutions</strong>
+        	<ul>
+              <li><a href="/mysql-hosting.html">MySQL Hosting</a></li>
+              <li><a href="/postgresql-hosting.html">PostrgeSQL Hosting</a></li>
+              <li><a href="/php-web-hosting.html">PHP Hosting</a></li>
+              <li><a href="/perl-web-hosting.html">Perl Hosting</a></li>
+              <li><a href="/microsoft-frontpage-extensions-and-web-hosting.html">Frontpage Hosting</a></li>
+              <li><a href="/dreamweaver-extensions.html">Dreamweaver Hosting</a></li>
+              <li><a href="/videos/com-domain-registration-transfer.html">dot COM Domain Names</a></li>
+              <li><a href="/videos/net-domain-registration-transfer.html">dot NET Domain Names</a></li>
+              <li><a href="/videos/org-domain-registration-transfer.html">dot ORG Domain Names</a></li>
+            </ul>
+        </div>
+    	<div class="fcollast">
+        	<strong>Web Hosting Videos</strong>
+        	<ul>
+              <li><a href="/videos/domain-name-web-hosting.html">Domain Name Web Hosting</a></li>
+              <li><a href="/videos/low-cost-web-hosting.html">Low-cost Hosting Services</a></li>
+              <li><a href="/videos/compare-low-cost-web-hosting-plans.html">Compare Hosting Plans</a></li>
+              <li><a href="/videos/virtual-server-hosting.html">Virtual Server Hosting</a></li>
+              <li><a href="/videos/dedicated-server-web-hosting.html">Dedicated Server Hosting</a></li>
+              <li><a href="/videos/semi-dedicated-server-hosting.html">Semi-dedicated Server</a></li>
+              <li><a href="/videos/email-web-hosting.html">Email Web Hosting</a></li>
+              <li><a href="/videos/ftp-web-hosting.html">FTP Web Hosting</a></li>
+              <li><a href="/videos/email-web-hosting.html">eMail Web Hosting</a></li>
+            </ul>
+        </div><br clear="all" /></div>
+	<div id="footer_copyright">
+    	<div id="fcp_left">&copy; Copyright www.ntchosting.com 2002 - 2012.<br />All rights reserved.<br /><a href="/terms/privacy-policy.html">Privacy Policy</a> | <a href="/terms/">Terms and Conditions</a> | <a href="/service-level-guarantees/">Service Level Guarantees</a></div>
+        <div id="fcp_right"><a href="#" onclick="javascript:window.open('https://www.paypal.com/uk/cgi-bin/webscr?cmd=xpt/Marketing/popup/OLCWhatIsPayPal-outside','olcwhatispaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=400, height=350');return false;"><img  src="/web_hosting_images/footer_pp.png" alt="Acceptance Mark" style="vertical-align:middle;"></a><img src="/web_hosting_images/footer_cc.png" alt="Supported Credit Cards" style="vertical-align:middle;" /></div>
+        <br clear="all" />
+    </div>
+</div>
+
+<div class="simple_overlay" id="loginOverlay">
+    <div class="contentWrap"></div>
+</div>
+
+<!-- GOOGLE Analytics code BEGIN -->
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript"></script>
+<script type="text/javascript"> _uacct = "UA-1074220-3"; urchinTracker(); </script>
+<!-- GOOGLE Analytics code END -->
+<script type="text/javascript" src="/includes/bottom.php"></script>
+<script type="text/javascript" language="javascript" src="https://www.ntchosting.com/includes/counter.php?user=58&amp;sr="></script>
+<script type="text/javascript">
+if(jQuery){
+    var ref = $(document)[0].referrer;
+    var falseref = /^http:\/\/www\.ntchosting\.com/.exec(ref);
+    if(!falseref && ref) $.post("/libs/vref.php",{ref: ref} );
+}
+</script>
+<!-- Crasy Egg code BEGIN -->
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0004/7037.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+<!-- Crasy Egg code END -->
+
+
+<!-- BEGIN ProvideSupport.com Custom Images Chat Button Code -->
+<div id="cigmZv" style="z-index:100;position:absolute"></div><div id="sdgmZv" style="display:none"></div><script type="text/javascript">var segmZv=document.createElement("script");segmZv.type="text/javascript";var segmZvs=(location.protocol.indexOf("https")==0?"https":"http")+"://image.providesupport.com/js/propersupport/safe-standard.js?ps_h=gmZv&ps_t="+new Date().getTime()+"&online-image=/web_hosting_images/livechat_ico.png&offline-image=/web_hosting_images/livechat_ico.png&ID=49737";setTimeout("segmZv.src=segmZvs;document.getElementById('sdgmZv').appendChild(segmZv)",1)</script>
+<!-- END ProvideSupport.com Custom Images Chat Button Code --></body>
+</html>

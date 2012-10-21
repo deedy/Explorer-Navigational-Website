@@ -1,0 +1,120 @@
+<html>
+<head>
+<title>Add Item</title>
+<style type="text/css">
+html {height:100%;}
+table {
+	width:250px;
+	float:left;
+	font-smooth:always; 
+	font-family:helvetica;
+}
+
+.labeltext {
+	font-size: 0.6em;
+	font-weight: bold;
+}
+.labelitem {
+	padding-bottom: 10px;
+}
+</style>
+
+<script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+<form class="form1" name="addform" id="addform" action="connectors/AddItem.php" method="POST">
+		<table>
+			<tr>
+				<td class="labeltext">Item Label</td>
+			</tr>
+			<tr>
+				<td class="labelitem" ><input size="50" type="text" name="itemname" autocomplete="off" placeholder="Name of the item"/></td>
+			</tr>
+			<tr>
+				<td class="labeltext">Item Tooltip</td>
+			</tr>
+			<tr>
+				<td class="labelitem" ><input size="50" type="text" name="itemtool" autocomplete="off" placeholder="This text will appear on hover"/></td>
+			</tr>
+			<tr>
+				<td class="labeltext">Use Image?</td>
+			</tr>
+			<tr>
+				<td class="labelitem"><input type="checkbox" name="useimage"/></td>
+			</tr>
+			<tr>
+				<td class="labeltext">Item URL</td>
+			</tr>
+			<tr>
+				<td class="labelitem" ><input size="50" type="text" name="itemurl" autocomplete="off" placeholder="The URL of the Item you wish to attach"/></td>
+			</tr>
+			<tr>
+				<td>
+					<table style="width:auto;">
+						<tr>
+							<td class="labeltext">Item Width</td>
+							<td class="labeltext">Item Height</td>
+						</tr>
+						<tr>
+							<td class="labelitem"><input size="auto" type="text" name="itemwidth" autocomplete="off" placeholder="Width in pixels"/>
+							<td class="labelitem"><input size="auto" type="text" name="itemheight" autocomplete="off" placeholder="Height in pixels"/>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td class="labeltext">Target Frame</td>
+			</tr>
+			<tr>
+				<td class="labelitem" ><input size="50" type="text" name="itemtargframe" autocomplete="off" placeholder=""/></td>
+			</tr>
+			<tr>
+				<td class="labeltext">Parent</td>
+			</tr>
+			<tr>
+				<td class="labelitem" >
+					<select name="parent" style="width:100%;">
+						<?
+						$root="./iframes";
+						$file= scandir($root); 
+						
+						natcasesort($file);
+						echo "<option value=\"".$root."\">".htmlentities("root")."</option>";
+						for ($i = 2; $i < count($file); $i++) {
+							if (is_dir($root."/".$file[$i]) && $file[$i]!="css" && $file[$i]!='js' && $file[$i]!='images') {
+								echo "<option value=\"".htmlentities($root."/".$file[$i])."\">".htmlentities($file[$i])."</option>";
+								$subdir=scandir($root."/".$file[$i]);
+								natcasesort($subdir);
+
+								for ($j=2;$j<count($subdir);$j++) {
+									if (is_dir($root."/".$file[$i]."/".$subdir[$j]) && $subdir[$j]!="css" && $subdir[$j]!='js' && $subdir[$j]!='images') 
+										echo "<option value=\"".htmlentities($root."/".$file[$i]."/".$subdir[$j])."\">".htmlentities($subdir[$j])."</option>";
+								}
+							}
+						}
+
+
+						?>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td class="labeltext">Assign your own CSS to menu item?</td>
+			</tr>
+			<tr>
+				<td class="labelitem"><input type="checkbox" name="owncss"/></td>
+			</tr>
+			<tr>
+				<td class="labeltext">Enabled</td>
+			</tr>
+			<tr>
+				<td class="labelitem"><input type="checkbox" name="enabled"/></td>
+			</tr>
+			<tr>
+				<td align="center"><input style="labeltext" type="submit" value="Save Item"/></td>
+			</tr>
+	</table>
+</form>
+</body>
+</html>
